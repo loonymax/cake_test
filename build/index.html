@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="@@description">
+	<meta name="keywords"
+				content="@@keywords">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Тестовое задание для Cake</title>
+</head>
+
+
+<body>
+	<header class="header">
+  <div class="header header__wrapper">
+    <button class="header__catalog">
+      <span class="header__catalog--visibility">Каталог</span>
+    </button>
+    <input class="header__search" type="search" placeholder="Найти товар">
+    <div class="header__userboard">
+      <button class="header__userboard-item">
+        <svg class="header__userboard-item--favorites" aria-hidden="true" focusable="false">
+          <use href="./img/sprite.svg#sprite--heart"></use>
+        </svg>
+        Избранное
+      </button>
+      <button class="header__userboard-item">
+        <svg class="header__userboard-item--orders" aria-hidden="true" focusable="false">
+          <use href="./img/sprite.svg#sprite--box"></use>
+        </svg>
+        Заказы
+      </button>
+      <button class="header__userboard-item">
+        <svg class="header__userboard-item--basket" aria-hidden="true" focusable="false">
+          <use href="./img/sprite.svg#sprite--basket"></use>
+        </svg>
+        Корзина
+        <span class="header__basket-amount">1</span>
+      </button>
+    </div>
+    <div class="header__profile">
+      <img class="header__profile-img" src="./img/avatar@1x.webp"
+        srcset="./img/avatar@1x.webp 1x, ./img/avatar@2x.webp 2x"
+        alt="Аватар пользователя.">
+      <span class="header__profile-name">Алексей</span>
+    </div>
+  </div>
+</header>
+	<main class="main">
+	<section class="hero hero__wrapper">
+  <img class="hero__img" src="./img/hero-flowers@1x.webp"
+        srcset="./img/hero-flowers@1x.webp 1x, ./img/hero-flowers@2x.webp 2x"
+        alt="Букет из еды.">
+  <h2 class="hero__title">Доставка бесплатно от 1000&nbsp;₽</h2>
+</section>
+	<section class="stock">
+  <div class="stock__container">
+    <div class="stock__title-wrap">
+      <h2 class="stock__title">Акции</h2>
+      <button class="stock__all-btn">Все акции</button>
+    </div>
+    <ul class="stock__cards cards">
+      <li class="cards__card card">
+        <button class="card__favorite">
+          <svg class="card__favorite--icon" aria-hidden="true" focusable="false">
+            <use href="./img/sprite.svg#sprite--heart"></use>
+          </svg>
+          <span class="visually-hidden">Добавить в избранное</span>
+        </button>
+        <img class="card__img" src="./img/catalog/catalog-image-1@1x.webp"
+          srcset="./img/catalog/catalog-image-1@1x.webp 1x, ./img/catalog/catalog-image-1@2x.webp 2x"
+          alt="Изображение продукта.">
+        <div class="card__description-wrap">
+          <span class="card__promotion">-50%</span>
+          <div class="card__wrap">
+            <div class="card__price-wrap">
+              <p class="card__price card__price--stock">44,50 ₽</p>
+              <span class="card__description">С картой</span>
+            </div>
+            <div class="card__price-wrap">
+              <p class="card__price">50,50 ₽</p>
+              <span class="card__description">Обычная</span>
+            </div>
+          </div>
+          <h3 class="card__title">Г/Ц Блинчики с мясом вес, Россия</h3>
+          <div class="card__stars">
+            <input class="card__input visually-hidden" type="radio" id="promo-1-star-5" name="rating-1" value="5">
+            <label for="promo-1-star-5" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-1-star-4" name="rating-1" value="4">
+            <label for="promo-1-star-4" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-1-star-3" name="rating-1" value="3">
+            <label for="promo-1-star-3" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-1-star-2" name="rating-1" value="2"
+              checked>
+            <label for="promo-1-star-2" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-1-star-1" name="rating-1" value="1">
+            <label for="promo-1-star-1" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+          </div>
+          <button class="card__basket-btn">В корзину</button>
+        </div>
+      </li>
+      <li class="cards__card card">
+        <button class="card__favorite">
+          <svg class="card__favorite--icon" aria-hidden="true" focusable="false">
+            <use href="./img/sprite.svg#sprite--heart"></use>
+          </svg>
+          <span class="visually-hidden">Добавить в избранное</span>
+        </button>
+        <img class="card__img" src="./img/catalog/catalog-image-2@1x.webp"
+          srcset="./img/catalog/catalog-image-2@1x.webp 1x, ./img/catalog/catalog-image-2@2x.webp 2x"
+          alt="Изображение продукта.">
+        <div class="card__description-wrap">
+          <span class="card__promotion">-50%</span>
+          <div class="card__wrap">
+            <div class="card__price-wrap">
+              <p class="card__price card__price--stock">44,50 ₽</p>
+              <span class="card__description">С картой</span>
+            </div>
+            <div class="card__price-wrap">
+              <p class="card__price">50,50 ₽</p>
+              <span class="card__description">Обычная</span>
+            </div>
+          </div>
+          <h3 class="card__title">Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное и еще много текста прямо вот
+            здесь </h3>
+          <div class="card__stars">
+            <input class="card__input visually-hidden" type="radio" id="promo-2-star-5" name="rating-2" value="5">
+            <label for="promo-2-star-5" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-2-star-4" name="rating-2" value="4">
+            <label for="promo-2-star-4" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-2-star-3" name="rating-2" value="3"
+              checked>
+            <label for="promo-2-star-3" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-2-star-2" name="rating-2" value="2">
+            <label for="promo-2-star-2" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-2-star-1" name="rating-2" value="1">
+            <label for="promo-2-star-1" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+          </div>
+          <button class="card__basket-btn">В корзину</button>
+        </div>
+      </li>
+      <li class="cards__card card">
+        <button class="card__favorite">
+          <svg class="card__favorite--icon" aria-hidden="true" focusable="false">
+            <use href="./img/sprite.svg#sprite--heart"></use>
+          </svg>
+          <span class="visually-hidden">Добавить в избранное</span>
+        </button>
+        <img class="card__img" src="./img/catalog/catalog-image-3@1x.webp"
+          srcset="./img/catalog/catalog-image-3@1x.webp 1x, ./img/catalog/catalog-image-3@2x.webp 2x"
+          alt="Изображение продукта.">
+        <div class="card__description-wrap">
+          <span class="card__promotion">-50%</span>
+          <div class="card__wrap">
+            <div class="card__price-wrap">
+              <p class="card__price card__price--stock">44,50 ₽</p>
+              <span class="card__description">С картой</span>
+            </div>
+            <div class="card__price-wrap">
+              <p class="card__price">50,50 ₽</p>
+              <span class="card__description">Обычная</span>
+            </div>
+          </div>
+          <h3 class="card__title">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</h3>
+          <div class="card__stars">
+            <input class="card__input visually-hidden" type="radio" id="promo-3-star-5" name="rating-3" value="5"
+              checked>
+            <label for="promo-3-star-5" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-3-star-4" name="rating-3" value="4">
+            <label for="promo-3-star-4" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-3-star-3" name="rating-3" value="3">
+            <label for="promo-3-star-3" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-3-star-2" name="rating-3" value="2">
+            <label for="promo-3-star-2" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-3-star-1" name="rating-3" value="1">
+            <label for="promo-3-star-1" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+          </div>
+          <button class="card__basket-btn">В корзину</button>
+        </div>
+      </li>
+      <li class="cards__card card">
+        <button class="card__favorite">
+          <svg class="card__favorite--icon" aria-hidden="true" focusable="false">
+            <use href="./img/sprite.svg#sprite--heart"></use>
+          </svg>
+          <span class="visually-hidden">Добавить в избранное</span>
+        </button>
+        <img class="card__img" src="./img/catalog/catalog-image-4@1x.webp"
+          srcset="./img/catalog/catalog-image-4@1x.webp 1x, ./img/catalog/catalog-image-4@2x.webp 2x"
+          alt="Изображение продукта.">
+        <div class="card__description-wrap">
+          <span class="card__promotion">-50%</span>
+          <div class="card__wrap">
+            <div class="card__price-wrap">
+              <p class="card__price card__price--stock">44,50 ₽</p>
+              <span class="card__description">С картой</span>
+            </div>
+            <div class="card__price-wrap">
+              <p class="card__price">50,50 ₽</p>
+              <span class="card__description">Обычная</span>
+            </div>
+          </div>
+          <h3 class="card__title">Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...</h3>
+          <div class="card__stars">
+            <input class="card__input visually-hidden" type="radio" id="promo-4-star-5" name="rating-4" value="5">
+            <label for="promo-4-star-5" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-4-star-4" name="rating-4" value="4"
+              checked>
+            <label for="promo-4-star-4" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-4-star-3" name="rating-4" value="3">
+            <label for="promo-4-star-3" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-4-star-2" name="rating-4" value="2">
+            <label for="promo-4-star-2" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="promo-4-star-1" name="rating-4" value="1">
+            <label for="promo-4-star-1" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+          </div>
+          <button class="card__basket-btn">В корзину</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="stock__container">
+    <div class="stock__title-wrap">
+      <h2 class="stock__title">Новинки</h2>
+      <button class="stock__all-btn">Все новинки</button>
+    </div>
+    <ul class="stock__cards cards">
+      <li class="cards__card card">
+        <button class="card__favorite">
+          <svg class="card__favorite--icon" aria-hidden="true" focusable="false">
+            <use href="./img/sprite.svg#sprite--heart"></use>
+          </svg>
+          <span class="visually-hidden">Добавить в избранное</span>
+        </button>
+        <img class="card__img" src="./img/catalog/catalog-image-5@1x.webp"
+          srcset="./img/catalog/catalog-image-5@1x.webp 1x, ./img/catalog/catalog-image-5@2x.webp 2x"
+          alt="Изображение продукта.">
+        <div class="card__description-wrap">
+          <p class="card__default-price">599,99 ₽</p>
+          <h3 class="card__title">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+          <div class="card__stars">
+            <input class="card__input visually-hidden" type="radio" id="news-1-star-5" name="news-rating-1" value="5">
+            <label for="news-1-star-5" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-1-star-4" name="news-rating-1" value="4">
+            <label for="news-1-star-4" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-1-star-3" name="news-rating-1" value="3">
+            <label for="news-1-star-3" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-1-star-2" name="news-rating-1" value="2"
+              checked>
+            <label for="news-1-star-2" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-1-star-1" name="news-rating-1" value="1">
+            <label for="news-1-star-1" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+          </div>
+          <button class="card__basket-btn">В корзину</button>
+        </div>
+      </li>
+      <li class="cards__card card">
+        <button class="card__favorite">
+          <svg class="card__favorite--icon" aria-hidden="true" focusable="false">
+            <use href="./img/sprite.svg#sprite--heart"></use>
+          </svg>
+          <span class="visually-hidden">Добавить в избранное</span>
+        </button>
+        <img class="card__img" src="./img/catalog/catalog-image-3@1x.webp"
+          srcset="./img/catalog/catalog-image-3@1x.webp 1x, ./img/catalog/catalog-image-3@2x.webp 2x"
+          alt="Изображение продукта.">
+        <div class="card__description-wrap">
+          <p class="card__default-price">44,50 ₽</p>
+          <h3 class="card__title">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</h3>
+          <div class="card__stars">
+            <input class="card__input visually-hidden" type="radio" id="news-2-star-5" name="news-rating-2" value="5" checked>
+            <label for="news-2-star-5" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-2-star-4" name="news-rating-2" value="4">
+            <label for="news-2-star-4" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-2-star-3" name="news-rating-2" value="3">
+            <label for="news-2-star-3" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-2-star-2" name="news-rating-2" value="2">
+            <label for="news-2-star-2" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-2-star-1" name="news-rating-2" value="1">
+            <label for="news-2-star-1" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+          </div>
+          <button class="card__basket-btn">В корзину</button>
+        </div>
+      </li>
+      <li class="cards__card card">
+        <button class="card__favorite">
+          <svg class="card__favorite--icon" aria-hidden="true" focusable="false">
+            <use href="./img/sprite.svg#sprite--heart"></use>
+          </svg>
+          <span class="visually-hidden">Добавить в избранное</span>
+        </button>
+        <img class="card__img" src="./img/catalog/catalog-image-4@1x.webp"
+          srcset="./img/catalog/catalog-image-4@1x.webp 1x, ./img/catalog/catalog-image-4@2x.webp 2x"
+          alt="Изображение продукта.">
+        <div class="card__description-wrap">
+          <p class="card__default-price">159,99 ₽</p>
+          <h3 class="card__title">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12».</h3>
+          <div class="card__stars">
+            <input class="card__input visually-hidden" type="radio" id="news-3-star-5" name="news-rating-3" value="5">
+            <label for="news-3-star-5" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-3-star-4" name="news-rating-3" value="4">
+            <label for="news-3-star-4" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-3-star-3" name="news-rating-3" value="3">
+            <label for="news-3-star-3" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-3-star-2" name="news-rating-3" value="2" checked>
+            <label for="news-3-star-2" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-3-star-1" name="news-rating-3" value="1">
+            <label for="news-3-star-1" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+          </div>
+          <button class="card__basket-btn">В корзину</button>
+        </div>
+      </li>
+      <li class="cards__card card">
+        <button class="card__favorite">
+          <svg class="card__favorite--icon" aria-hidden="true" focusable="false">
+            <use href="./img/sprite.svg#sprite--heart"></use>
+          </svg>
+          <span class="visually-hidden">Добавить в избранное</span>
+        </button>
+        <img class="card__img" src="./img/catalog/catalog-image-2@1x.webp"
+          srcset="./img/catalog/catalog-image-2@1x.webp 1x, ./img/catalog/catalog-image-2@2x.webp 2x"
+          alt="Изображение продукта.">
+        <div class="card__description-wrap">
+          <p class="card__default-price">49,39 ₽</p>
+          <h3 class="card__title">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12».</h3>
+          <div class="card__stars">
+            <input class="card__input visually-hidden" type="radio" id="news-4-star-5" name="news-rating-4" value="5">
+            <label for="news-4-star-5" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-4-star-4" name="news-rating-4" value="4">
+            <label for="news-4-star-4" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-4-star-3" name="news-rating-4" value="3">
+            <label for="news-4-star-3" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-4-star-2" name="news-rating-4" value="2" checked>
+            <label for="news-4-star-2" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="news-4-star-1" name="news-rating-4" value="1">
+            <label for="news-4-star-1" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+          </div>
+          <button class="card__basket-btn">В корзину</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="stock__container">
+    <div class="stock__title-wrap">
+      <h2 class="stock__title">Покупали раньше</h2>
+      <button class="stock__all-btn">Все покупки</button>
+    </div>
+    <ul class="stock__cards cards">
+      <li class="cards__card card">
+        <button class="card__favorite">
+          <svg class="card__favorite--icon" aria-hidden="true" focusable="false">
+            <use href="./img/sprite.svg#sprite--heart"></use>
+          </svg>
+          <span class="visually-hidden">Добавить в избранное</span>
+        </button>
+        <img class="card__img" src="./img/catalog/catalog-image-6@1x.webp"
+          srcset="./img/catalog/catalog-image-6@1x.webp 1x, ./img/catalog/catalog-image-6@2x.webp 2x"
+          alt="Изображение продукта.">
+        <div class="card__description-wrap">
+          <p class="card__default-price">77,99 ₽</p>
+          <h3 class="card__title">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+          <div class="card__stars">
+            <input class="card__input visually-hidden" type="radio" id="purchases-1-star-5" name="purchases-rating-1" value="5">
+            <label for="purchases-1-star-5" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-1-star-4" name="purchases-rating-1" value="4">
+            <label for="purchases-1-star-4" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-1-star-3" name="purchases-rating-1" value="3">
+            <label for="purchases-1-star-3" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-1-star-2" name="purchases-rating-1" value="2" checked>
+            <label for="purchases-1-star-2" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-1-star-1" name="purchases-rating-1" value="1">
+            <label for="purchases-1-star-1" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+          </div>
+          <button class="card__basket-btn">В корзину</button>
+        </div>
+      </li>
+      <li class="cards__card card">
+        <button class="card__favorite">
+          <svg class="card__favorite--icon" aria-hidden="true" focusable="false">
+            <use href="./img/sprite.svg#sprite--heart"></use>
+          </svg>
+          <span class="visually-hidden">Добавить в избранное</span>
+        </button>
+        <img class="card__img" src="./img/catalog/catalog-image-3@1x.webp"
+          srcset="./img/catalog/catalog-image-3@1x.webp 1x, ./img/catalog/catalog-image-3@2x.webp 2x"
+          alt="Изображение продукта.">
+        <div class="card__description-wrap">
+          <p class="card__default-price">44,50 ₽</p>
+          <h3 class="card__title">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</h3>
+          <div class="card__stars">
+            <input class="card__input visually-hidden" type="radio" id="purchases-2-star-5" name="purchases-rating-2" value="5">
+            <label for="purchases-2-star-5" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-2-star-4" name="purchases-rating-2" value="4">
+            <label for="purchases-2-star-4" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-2-star-3" name="purchases-rating-2" value="3">
+            <label for="purchases-2-star-3" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-2-star-2" name="purchases-rating-2" value="2" checked>
+            <label for="purchases-2-star-2" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-2-star-1" name="purchases-rating-2" value="1">
+            <label for="purchases-2-star-1" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+          </div>
+          <button class="card__basket-btn">В корзину</button>
+        </div>
+      </li>
+      <li class="cards__card card">
+        <button class="card__favorite">
+          <svg class="card__favorite--icon" aria-hidden="true" focusable="false">
+            <use href="./img/sprite.svg#sprite--heart"></use>
+          </svg>
+          <span class="visually-hidden">Добавить в избранное</span>
+        </button>
+        <img class="card__img" src="./img/catalog/catalog-image-4@1x.webp"
+          srcset="./img/catalog/catalog-image-4@1x.webp 1x, ./img/catalog/catalog-image-4@2x.webp 2x"
+          alt="Изображение продукта.">
+        <div class="card__description-wrap">
+          <p class="card__default-price">159,99 ₽</p>
+          <h3 class="card__title">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12».</h3>
+          <div class="card__stars">
+            <input class="card__input visually-hidden" type="radio" id="purchases-3-star-5" name="purchases-rating-3" value="5">
+            <label for="purchases-3-star-5" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-3-star-4" name="purchases-rating-3" value="4">
+            <label for="purchases-3-star-4" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-3-star-3" name="purchases-rating-3" value="3">
+            <label for="purchases-3-star-3" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-3-star-2" name="purchases-rating-3" value="2" checked>
+            <label for="purchases-3-star-2" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-3-star-1" name="purchases-rating-3" value="1">
+            <label for="purchases-3-star-1" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+          </div>
+          <button class="card__basket-btn">В корзину</button>
+        </div>
+      </li>
+      <li class="cards__card card">
+        <button class="card__favorite">
+          <svg class="card__favorite--icon" aria-hidden="true" focusable="false">
+            <use href="./img/sprite.svg#sprite--heart"></use>
+          </svg>
+          <span class="visually-hidden">Добавить в избранное</span>
+        </button>
+        <img class="card__img" src="./img/catalog/catalog-image-2@1x.webp"
+          srcset="./img/catalog/catalog-image-2@1x.webp 1x, ./img/catalog/catalog-image-2@2x.webp 2x"
+          alt="Изображение продукта.">
+        <div class="card__description-wrap">
+          <p class="card__default-price">49,39 ₽</p>
+          <h3 class="card__title">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12».</h3>
+          <div class="card__stars">
+            <input class="card__input visually-hidden" type="radio" id="purchases-4-star-5" name="purchases-rating-4" value="5">
+            <label for="purchases-4-star-5" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-4-star-4" name="purchases-rating-4" value="4">
+            <label for="purchases-4-star-4" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-4-star-3" name="purchases-rating-4" value="3">
+            <label for="purchases-4-star-3" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-4-star-2" name="purchases-rating-4" value="2" checked>
+            <label for="purchases-4-star-2" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+            <input class="card__input visually-hidden" type="radio" id="purchases-4-star-1" name="purchases-rating-4" value="1">
+            <label for="purchases-4-star-1" class="card__star">
+              <svg class="card__star-icon" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#sprite--star"></use>
+              </svg>
+            </label>
+          </div>
+          <button class="card__basket-btn">В корзину</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+	<section class="special">
+  <h2 class="special__title">Специальные предложения</h2>
+  <div class="special__wrap">
+    <div class="special__offer offer offer--card">
+        <h3 class="offer__title">Оформите карту «Северяночка»</h3>
+        <p class="offer__description">И получайте бонусы при покупке в магазинах и на сайте</p>
+    </div>
+    <div class="special__offer offer offer--promo">
+      <h3 class="offer__title">Покупайте акционные товары</h3>
+      <p class="offer__description">И получайте вдвое больше бонусов</p>
+    </div>
+  </div>
+</section>
+	</main>
+	<footer class="footer"></footer>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

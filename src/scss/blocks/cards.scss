@@ -1,0 +1,24 @@
+.cards {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cards__card:nth-child(3)~.card {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .cards {
+    grid-template-columns: repeat(3, 230px);
+    overflow-x: scroll;
+  }
+}

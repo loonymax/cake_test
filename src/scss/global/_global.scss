@@ -1,0 +1,86 @@
+// Colors
+
+$white: #ffffff;
+$green: #70C05B;
+$green-hover: #58ac44;
+$black: #000000;
+$gray: #414141;
+$orange: #FF6633;
+$beige: #FBF8EC;
+
+// Viewports
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	transition: 0.05s;
+	transition: background-color 0.2s;
+	transition: box-shadow 0.2s;
+}
+
+html {
+	font-family: "Rubik", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	max-width: 1440px;
+	margin: 0 auto;
+	color: $gray;
+}
+
+html,
+body {
+	min-height: 100%;
+	position: relative;
+	
+}
+
+body {
+	font-size: 1rem;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	color: inherit;
+}
+
+input {
+	border: none;
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

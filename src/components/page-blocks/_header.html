@@ -1,0 +1,35 @@
+<header class="header">
+  <div class="header header__wrapper">
+    <button class="header__catalog">
+      <span class="header__catalog--visibility">Каталог</span>
+    </button>
+    <input class="header__search" type="search" placeholder="Найти товар">
+    <div class="header__userboard">
+      <button class="header__userboard-item">
+        <svg class="header__userboard-item--favorites" aria-hidden="true" focusable="false">
+          <use href="./img/sprite.svg#sprite--heart"></use>
+        </svg>
+        Избранное
+      </button>
+      <button class="header__userboard-item">
+        <svg class="header__userboard-item--orders" aria-hidden="true" focusable="false">
+          <use href="./img/sprite.svg#sprite--box"></use>
+        </svg>
+        Заказы
+      </button>
+      <button class="header__userboard-item">
+        <svg class="header__userboard-item--basket" aria-hidden="true" focusable="false">
+          <use href="./img/sprite.svg#sprite--basket"></use>
+        </svg>
+        Корзина
+        <span class="header__basket-amount">1</span>
+      </button>
+    </div>
+    <div class="header__profile">
+      <img class="header__profile-img" src="./img/avatar@1x.webp"
+        srcset="./img/avatar@1x.webp 1x, ./img/avatar@2x.webp 2x"
+        alt="Аватар пользователя.">
+      <span class="header__profile-name">Алексей</span>
+    </div>
+  </div>
+</header>

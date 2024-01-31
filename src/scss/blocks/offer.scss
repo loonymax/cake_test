@@ -1,0 +1,86 @@
+.offer {
+  padding: 35px 20% 35px 40px;
+  border-radius: 4px;
+  width: 48%;
+  cursor: pointer;
+
+  &--card {
+    position: relative;
+    background-color: #FCD5BA;
+
+    &:hover {
+      box-shadow: 0 8px 10px rgba($color: #CA9360, $alpha: 0.5);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-image: url('../../img/loyal-card@1x.png');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: 50% 40%;
+    }
+  }
+
+  &--promo {
+    position: relative;
+    background-color: #c4e3bb;
+
+    background-image: url('../../img/promo-basket@1x.png');
+    background-repeat: no-repeat;
+    background-size: 90% auto;
+    background-position: 80% 40%;
+
+    &:hover {
+      box-shadow: 0 8px 10px rgba($color: #7e9577, $alpha: 0.5);
+    }
+  }
+}
+
+.offer__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  line-height: 150%;
+}
+
+.offer__description {
+  line-height: 150%;
+}
+
+@media (max-width: 1024px) {
+  .offer {
+    padding: 22px 20% 22px 30px;
+  }
+
+  .offer__title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .offer {
+    padding: 20px 45% 20px 20px;
+    width: 100%;
+    background-position-y: 50%;
+
+    &::before {
+      background-position-y: 50%;
+    }
+  }
+
+  .offer__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    line-height: 150%;
+  }
+
+  .offer__description {
+    line-height: 150%;
+  }
+}

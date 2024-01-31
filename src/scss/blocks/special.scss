@@ -1,0 +1,40 @@
+.special {
+  background-color: $beige;
+  padding: 50px 116px;
+}
+
+.special__title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.special__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .special {
+    background-color: $beige;
+    padding: 40px 16px;
+  }
+
+  .special__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .special__wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .special__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+}
